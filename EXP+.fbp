@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="EXP+" version="3.0" id="NSy4IxSza4" font="Arial" defaultPage="#pg_e2bnx" type="default" theme="SimplicityGray">
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_e2bnx" clasz="com.flairbuilder.project::Page" name="Home" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcY3851" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="23" height="23" x="144" y="185" enabled="true" visible="true" hidden="false" id="fbc6368t" clasz="com.flairbuilder.components.iphone::IPhoneBadge" backgroundColor="3505122" borderColor="16777215" style="plus"/>
+    <Component width="319" height="28" x="33" y="582" enabled="true" visible="true" hidden="false" id="fbcO51vo" clasz="com.flairbuilder.components.iphone::IPhoneButtonBar" bold="false" italic="false" underline="false" color="0" fontSize="10" backgroundColor="16777215" label="" version="3.0">
+      <behaviors>
+        <condition item="Expenses">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Mileage">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Reports">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_Yv29P" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Home">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data>Home,Expenses,Mileage,Reports</data>
+    </Component>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcdL53s" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="281" height="100" x="54" y="457" enabled="true" visible="true" hidden="false" id="fbc6e1TS" clasz="com.flairbuilder.components::GroupBox" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" borderColor="0" borderThickness="1" borderStyle="solid" title="Events &amp; Reminders"/>
+    <Component width="265" height="19" x="60" y="479" enabled="true" visible="true" hidden="false" id="fbco8N22" clasz="com.flairbuilder.components::Link" bold="false" italic="false" underline="true" color="13209" fontSize="12" leading="0" textAlign="left" label="Dec Report generated and send on 01-12-2013">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_Yv29P" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="196" height="19" x="60" y="499" enabled="true" visible="true" hidden="false" id="fbcS56hK" clasz="com.flairbuilder.components::Link" bold="false" italic="false" underline="true" color="13209" fontSize="12" leading="0" textAlign="left" label="2 Response messages from client"/>
+    <Component width="156" height="19" x="60" y="518" enabled="true" visible="true" hidden="false" id="fbcx74yC" clasz="com.flairbuilder.components::Link" bold="false" italic="false" underline="true" color="13209" fontSize="12" leading="0" textAlign="left" label="Totale EXpenses today £60"/>
+    <Component width="23" height="23" x="41" y="187" enabled="true" visible="true" hidden="false" id="fbc6tKov" clasz="com.flairbuilder.components.iphone::IPhoneBadge" backgroundColor="3505122" borderColor="16777215" style="plus"/>
+    <Component width="23" height="23" x="244" y="185" enabled="true" visible="true" hidden="false" id="fbcUE46I" clasz="com.flairbuilder.components.iphone::IPhoneBadge" backgroundColor="3505122" borderColor="16777215" style="gt"/>
+    <Component width="77" height="19" x="64" y="187" enabled="true" visible="true" hidden="false" id="fbc8oZ0e" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Add Expense"/>
+    <Component width="76" height="19" x="171" y="187" enabled="true" visible="true" hidden="false" id="fbc7xd63" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Add Mileage"/>
+    <Component width="79" height="19" x="267" y="187" enabled="true" visible="true" hidden="false" id="fbc1J73v" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Export Report"/>
+    <Component width="304" height="161" x="39" y="240" enabled="true" visible="true" hidden="false" id="fbcx888k" clasz="com.flairbuilder.components.charts::Chart" bold="false" italic="false" underline="false" color="0" fontSize="10" textAlign="center" backgroundColor="8230065" backgroundAlpha="0.5" borderColor="10027008" borderThickness="1" borderStyle="dashed" style="columnChart">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_Yv29P" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+      <data encoded="true">Jul%2013,74%0DAug%2013,41%0DSep%2013,56%0DOct%2013,92,%0DNov%2013,53%0DDec%2013,81</data>
+    </Component>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbcz6X2S" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbcoi884" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S">
+      <behaviors>
+        <behavior action="flair:ShowHideComponents" trigger="flair:mouseClick">
+          <action id="flair:ShowHideComponents" targets="fbc530JS" type="toggle" hideSimilar="false" pushOrPull="false" showAsPopUp="false"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_24572" clasz="com.flairbuilder.project::Page" name="Expenses-View-dec" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcvf0XV" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="319" height="28" x="33" y="582" enabled="true" visible="true" hidden="false" id="fbc6TC9o" clasz="com.flairbuilder.components.iphone::IPhoneButtonBar" bold="false" italic="false" underline="false" color="0" fontSize="10" backgroundColor="16777215" label="" version="3.0">
+      <behaviors>
+        <condition item="Home">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="View">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Add">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Export">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data>Home,View,Add, Export</data>
+    </Component>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcMC88i" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="297" height="24" x="47" y="183" enabled="true" visible="true" hidden="false" id="fbcd327n" clasz="com.flairbuilder.components::Search" bold="false" italic="false" underline="false" color="0" fontSize="12" backgroundColor="16777215" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="10" label="Search Expenses"/>
+    <Component width="297" height="308" x="47" y="217" enabled="true" visible="true" hidden="false" id="fbc7LErb" clasz="com.flairbuilder.components.iphone::IPhoneTableList" backgroundColor="16777215" borderColor="8947848" borderThickness="2" borderStyle="solid" cornerRadius="20">
+      <behaviors>
+        <condition item="$ANY$">
+          <behavior action="flair:GoToPageAction" trigger="flair:listItemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data encoded="true">-%20Dinner%20at%20restaurant-12,%20%3E%0D-%20Rent%20for%20office%20-770,%5Cn(Multiline),%3E%0D-%20Internet%20for%20office-20,%5Cn(Multiline),%3E%0D-%20Train%20tickets%20from%20GW/LN-120,%5Cn(Multiline),%3E%0D-%20Cofee-3.45,%5Cn(Multiline),%3E%0D-%20Dinner%20at%20restaurant-12,%5Cn(Multiline),%3E%0Dv%20Delete%20All,%20(above)</data>
+    </Component>
+    <Component width="61" height="20" x="47" y="534" enabled="true" visible="true" hidden="false" id="fbc8D0tU" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Nov 13" style="left" direction="left"/>
+    <Component width="61" height="20" x="161" y="534" enabled="true" visible="true" hidden="false" id="fbc67E9B" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Dec 13" style="normal" direction="normal"/>
+    <Component width="61" height="20" x="280" y="534" enabled="true" visible="true" hidden="false" id="fbc35BR5" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="10066329" label="" style="right" direction="right"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbc5545i" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbc27F3v" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_99T2k" clasz="com.flairbuilder.project::Page" name="Expenses-Add" color="255" backgroundColor="16777215">
+    <behaviors>
+      <behavior action="flair:UpdateVariableAction" trigger="flair:pageOnLoad">
+        <action id="flair:UpdateVariableAction" variableName="null" updateType="setValue" variableValue="" stepValue="1"/>
+      </behavior>
+    </behaviors>
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcVC1La" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbch47b9" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="65" height="25" x="36" y="184" enabled="true" visible="true" hidden="false" id="fbc04433" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Cancel" style="left" direction="left">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="65" height="25" x="278" y="184" enabled="true" visible="true" hidden="false" id="fbc97SPx" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Done" style="normal" direction="normal">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="288" height="209" x="48" y="218" enabled="true" visible="true" hidden="false" id="fbcUnzn4" clasz="com.flairbuilder.components::Rectangle" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="center" backgroundColor="13421772" backgroundAlpha="0" borderColor="4473924" borderThickness="1" borderStyle="solid" cornerRadius="0" label="">
+      <behaviors>
+        <behavior action="flair:UpdateStyling" trigger="flair:mouseClick">
+          <action id="flair:UpdateStyling" targets="" properties="" revertOnMouseExit="false" revertSimilar="false"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="155" height="24" x="155" y="235" enabled="true" visible="true" hidden="false" id="fbcN1487" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="172" height="24" x="155" y="273" enabled="true" visible="true" hidden="false" id="fbcd528d" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="NaN" height="NaN" x="889" y="260" enabled="true" visible="true" hidden="false" id="fbc3V98b" clasz="com.flairbuilder.components::DateField" format="MM/DD/YYYY"/>
+    <Component width="172" height="24" x="155" y="314" enabled="true" visible="true" hidden="false" id="fbc3v67l" clasz="com.flairbuilder.components::DateField" format="MM/DD/YYYY"/>
+    <Component width="172" height="24" x="155" y="358" enabled="true" visible="true" hidden="false" id="fbc4p6K9" clasz="com.flairbuilder.components::ComboBox" bold="false" italic="false" underline="false" color="0" fontSize="12" borderColor="0">
+      <data encoded="true">Office%0DSubsitance%0DInternet%0DMobile%0DAccomodation%0DTravel</data>
+    </Component>
+    <Component width="100" height="19" x="57" y="235" enabled="true" visible="true" hidden="false" id="fbc22hx5" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Description&#xD;"/>
+    <Component width="100" height="19" x="57" y="272" enabled="true" visible="true" hidden="false" id="fbc5yDSv" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Amount&#xD;"/>
+    <Component width="100" height="19" x="57" y="313" enabled="true" visible="true" hidden="false" id="fbcl9l5s" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Date&#xD;"/>
+    <Component width="100" height="19" x="56" y="358" enabled="true" visible="true" hidden="false" id="fbc1768F" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Category&#xD;"/>
+    <Component width="113" height="24" x="155" y="394" enabled="true" visible="true" hidden="false" id="fbc7eib5" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="100" height="19" x="57" y="393" enabled="true" visible="true" hidden="false" id="fbc799I7" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Receipt"/>
+    <Component width="24" height="24" x="304" y="392" enabled="true" visible="true" hidden="false" id="fbcrf685" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:OpenFolder" size="S"/>
+    <Component width="24" height="24" x="273" y="392" enabled="true" visible="true" hidden="false" id="fbca30eJ" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:Camera" size="S"/>
+    <Component width="24" height="24" x="308" y="236" enabled="true" visible="true" hidden="false" id="fbc38667" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:AddComment" size="S">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="100" height="20" x="148" y="187" enabled="true" visible="true" hidden="false" id="fbc47048" clasz="com.flairbuilder.components::Label" bold="true" italic="false" underline="false" color="0" fontSize="14" leading="0" textAlign="left" label="Add Expense"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbco3n2Y" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbc2h888" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_Yv29P" clasz="com.flairbuilder.project::Page" name="Report-Export" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcMy6X7" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcFdOf9" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="65" height="25" x="281" y="183" enabled="true" visible="true" hidden="false" id="fbcBz843" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Export" style="normal" direction="normal"/>
+    <Component width="65" height="25" x="36" y="183" enabled="true" visible="true" hidden="false" id="fbc3d06H" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Cancel" style="left" direction="left">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="305" height="255" x="41" y="308" enabled="true" visible="true" hidden="false" id="fbcUAeBX" clasz="com.flairbuilder.components::DataGrid" fontSize="12" borderColor="0" borderThickness="1" backgroundColor="15987442" style="dataGridVLines" showBorder="true" showHeader="true" headerHeight="21" rowHeight="21" version="3.0" showScrollbar="false" colwidths="26,218,57">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:gridRowClick">
+          <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+      <data encoded="true">No,*Category*,*Total*%0D%5B1%5D,Accommodation,775%0D%5B2%5D,Accountancy%20Fees,125%0D%5B3%5D,Internet%20Costs,15%0D%5B4%5D,Mobile%20Phone%20/%20Landline,10%0D%5B5%5D,Subsistence%20(receipted),120%0D%5B6%5D,Subsistence%20(%C2%A35/%C2%A310%20per%20night),200%0D%5B7%5D,Computer%20Software,20%0D%5B8%5D,Computer%20Hardware,400%0D%5B9%5D,Travel%20(excluding%20mileage),200%0D%5B10%5D,Travel%20(mileage),44%0D</data>
+    </Component>
+    <Component width="301" height="88" x="43" y="214" enabled="true" visible="true" hidden="false" id="fbcdt0ii" clasz="com.flairbuilder.components::GroupBox" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" borderColor="0" borderThickness="1" borderStyle="solid" title="Expense Claim Form"/>
+    <Component width="160" height="19" x="162" y="238" enabled="true" visible="true" hidden="false" id="fbc56t6S" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="10" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label="XEON IT Limited"/>
+    <Component width="100" height="18" x="57" y="235" enabled="true" visible="true" hidden="false" id="fbc5N749" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="11" leading="0" textAlign="left" label="Company Name&#xD;"/>
+    <Component width="160" height="19" x="162" y="259" enabled="true" visible="true" hidden="false" id="fbcA50O2" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="10" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label="Rajani Kant"/>
+    <Component width="100" height="18" x="57" y="256" enabled="true" visible="true" hidden="false" id="fbceBsrm" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="11" leading="0" textAlign="left" label="Employee Name&#xD;"/>
+    <Component width="160" height="19" x="162" y="280" enabled="true" visible="true" hidden="false" id="fbcxDrlZ" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="10" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label="Oct 2013"/>
+    <Component width="100" height="18" x="57" y="277" enabled="true" visible="true" hidden="false" id="fbc53KrS" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="11" leading="0" textAlign="left" label="Expense Period&#xD;"/>
+    <Component width="264" height="20" x="71" y="562" enabled="true" visible="true" hidden="false" id="fbc7U28j" clasz="com.flairbuilder.components::SubTitle" bold="false" italic="false" underline="false" color="0" fontSize="14" leading="0" textAlign="left" label="Account Rerence Number : 1233"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbc0x98T" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbcII3F6" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <Component width="61" height="20" x="47" y="585" enabled="true" visible="true" hidden="false" id="fbc4xB27" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Nov 13" style="left" direction="left"/>
+    <Component width="61" height="20" x="161" y="585" enabled="true" visible="true" hidden="false" id="fbcnv39L" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Dec 13" style="normal" direction="normal"/>
+    <Component width="61" height="20" x="280" y="585" enabled="true" visible="true" hidden="false" id="fbc4S546" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="10066329" label="" style="right" direction="right"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_2M18u" clasz="com.flairbuilder.project::Page" name="Mileage-View Dec" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcf22j3" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="319" height="28" x="33" y="582" enabled="true" visible="true" hidden="false" id="fbc2b8U4" clasz="com.flairbuilder.components.iphone::IPhoneButtonBar" bold="false" italic="false" underline="false" color="0" fontSize="10" backgroundColor="16777215" label="" version="3.0">
+      <behaviors>
+        <condition item="Home">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="View">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Add">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_42n9u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Export">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data>Home,View,Add, Export</data>
+    </Component>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcJR7A8" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="297" height="24" x="47" y="183" enabled="true" visible="true" hidden="false" id="fbcX7rF8" clasz="com.flairbuilder.components::Search" bold="false" italic="false" underline="false" color="0" fontSize="12" backgroundColor="16777215" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="10" label="Search Mileage"/>
+    <Component width="297" height="308" x="47" y="217" enabled="true" visible="true" hidden="false" id="fbc3Rb9l" clasz="com.flairbuilder.components.iphone::IPhoneTableList" backgroundColor="16777215" borderColor="8947848" borderThickness="2" borderStyle="solid" cornerRadius="20">
+      <behaviors>
+        <condition item="$ANY$">
+          <behavior action="flair:GoToPageAction" trigger="flair:listItemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+          <behavior action="flair:UpdateVariableAction" trigger="flair:listItemClick">
+            <action id="flair:UpdateVariableAction" variableName="null" updateType="setValue" variableValue="glasgow" stepValue="1"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data encoded="true">-%20Glasgow%20Center%20to%20West%20End-12,%20%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0D-%20Glasgow%20Center%20to%20West%20End-12,%5Cn(Multiline),%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0D-%20Glasgow%20Center%20to%20West%20End-12,%5Cn(Multiline),%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0Dv%20Delete%20All,%20(above)</data>
+    </Component>
+    <Component width="61" height="20" x="47" y="534" enabled="true" visible="true" hidden="false" id="fbc6827P" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Nov 13" style="left" direction="left">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_FJFF6" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="61" height="20" x="161" y="534" enabled="true" visible="true" hidden="false" id="fbc9450V" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Dec 13" style="normal" direction="normal"/>
+    <Component width="61" height="20" x="280" y="534" enabled="true" visible="true" hidden="false" id="fbcU3L7x" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="10066329" label="" style="right" direction="right"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbcL8Jk3" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbcAi770" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_42n9u" clasz="com.flairbuilder.project::Page" name="Mileage-Add" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcPUt97" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbc38SpA" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="65" height="25" x="36" y="183" enabled="true" visible="true" hidden="false" id="fbc48e6T" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Cancel" style="left" direction="left">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="65" height="25" x="278" y="183" enabled="true" visible="true" hidden="false" id="fbcooeuF" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Done" style="normal" direction="normal">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="288" height="209" x="48" y="218" enabled="true" visible="true" hidden="false" id="fbcl067f" clasz="com.flairbuilder.components::Rectangle" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="center" backgroundColor="13421772" backgroundAlpha="0" borderColor="4473924" borderThickness="1" borderStyle="solid" cornerRadius="0" label="">
+      <behaviors>
+        <behavior action="flair:UpdateStyling" trigger="flair:mouseClick">
+          <action id="flair:UpdateStyling" targets="" properties="" revertOnMouseExit="false" revertSimilar="false"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="155" height="24" x="155" y="235" enabled="true" visible="true" hidden="false" id="fbcO66AE" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="113" height="24" x="155" y="273" enabled="true" visible="true" hidden="false" id="fbc9u1lp" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="NaN" height="NaN" x="889" y="260" enabled="true" visible="true" hidden="false" id="fbcxk7nu" clasz="com.flairbuilder.components::DateField" format="MM/DD/YYYY"/>
+    <Component width="172" height="24" x="155" y="314" enabled="true" visible="true" hidden="false" id="fbcC8257" clasz="com.flairbuilder.components::DateField" format="MM/DD/YYYY"/>
+    <Component width="172" height="24" x="155" y="358" enabled="true" visible="true" hidden="false" id="fbcVdDO8" clasz="com.flairbuilder.components::ComboBox" bold="false" italic="false" underline="false" color="0" fontSize="12" borderColor="0">
+      <data encoded="true">Car%0DBus%0DBike%0DCycle%0DAir%0DOther</data>
+    </Component>
+    <Component width="100" height="19" x="56" y="235" enabled="true" visible="true" hidden="false" id="fbcU4296" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Description&#xD;"/>
+    <Component width="100" height="19" x="56" y="274" enabled="true" visible="true" hidden="false" id="fbc58pK8" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Miles&#xD;"/>
+    <Component width="100" height="19" x="56" y="314" enabled="true" visible="true" hidden="false" id="fbcjn668" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Date&#xD;"/>
+    <Component width="100" height="19" x="56" y="353" enabled="true" visible="true" hidden="false" id="fbcu74D7" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Mode&#xD;"/>
+    <Component width="81" height="7" x="270" y="271" enabled="true" visible="true" hidden="false" id="fbc5VZCC" clasz="com.flairbuilder.components::CheckBoxGroup" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" style="horizontalCheckboxes" direction="horizontal" version="3.0">
+      <data encoded="true">Return</data>
+    </Component>
+    <Component width="113" height="24" x="155" y="394" enabled="true" visible="true" hidden="false" id="fbc63O0X" clasz="com.flairbuilder.components::TextInput" bold="false" italic="false" underline="false" color="0" fontSize="12" textAlign="left" backgroundColor="16777215" backgroundAlpha="1" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="0" label=""/>
+    <Component width="100" height="19" x="56" y="393" enabled="true" visible="true" hidden="false" id="fbcU4C3v" clasz="com.flairbuilder.components::Label" bold="false" italic="false" underline="false" color="0" fontSize="12" leading="0" textAlign="left" label="Receipt"/>
+    <Component width="24" height="24" x="304" y="392" enabled="true" visible="true" hidden="false" id="fbcc0TOd" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:OpenFolder" size="S"/>
+    <Component width="24" height="24" x="273" y="392" enabled="true" visible="true" hidden="false" id="fbc20ezA" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:Camera" size="S"/>
+    <Component width="24" height="24" x="308" y="236" enabled="true" visible="true" hidden="false" id="fbc2D872" clasz="com.flairbuilder.components::Icon" backgroundColor="0" iconName="flair:AddComment" size="S">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="100" height="20" x="148" y="187" enabled="true" visible="true" hidden="false" id="fbc9Y676" clasz="com.flairbuilder.components::Label" bold="true" italic="false" underline="false" color="0" fontSize="14" leading="0" textAlign="left" label="Add Mileage"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbcKD265" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbc474o8" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_s7k62" clasz="com.flairbuilder.project::Page" name="Expenses-View-nov" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbcI4CJ3" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="319" height="28" x="33" y="582" enabled="true" visible="true" hidden="false" id="fbc2988p" clasz="com.flairbuilder.components.iphone::IPhoneButtonBar" bold="false" italic="false" underline="false" color="0" fontSize="10" backgroundColor="16777215" label="" version="3.0">
+      <behaviors>
+        <condition item="Home">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="View">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Add">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Export">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data>Home,View,Add, Export</data>
+    </Component>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcyM62M" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="297" height="24" x="47" y="183" enabled="true" visible="true" hidden="false" id="fbcpuDPI" clasz="com.flairbuilder.components::Search" bold="false" italic="false" underline="false" color="0" fontSize="12" backgroundColor="16777215" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="10" label="Search Expenses"/>
+    <Component width="297" height="308" x="47" y="217" enabled="true" visible="true" hidden="false" id="fbcFvc6N" clasz="com.flairbuilder.components.iphone::IPhoneTableList" backgroundColor="16777215" borderColor="8947848" borderThickness="2" borderStyle="solid" cornerRadius="20">
+      <behaviors>
+        <condition item="$ANY$">
+          <behavior action="flair:GoToPageAction" trigger="flair:listItemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+          <behavior action="flair:UpdateVariableAction" trigger="flair:listItemClick">
+            <action id="flair:UpdateVariableAction" variableName="null" updateType="setValue" variableValue="desc" stepValue="1"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data encoded="true">-%20Dinner%20at%20restaurant-12,%20%3E%0D-%20Rent%20for%20office%20-770,%5Cn(Multiline),%3E%0D-%20Internet%20for%20office-20,%5Cn(Multiline),%3E%0D-%20Train%20tickets%20from%20GW/LN-120,%5Cn(Multiline),%3E%0D-%20Cofee-3.45,%5Cn(Multiline),%3E%0D-%20Dinner%20at%20restaurant-12,%5Cn(Multiline),%3E%0Dv%20Delete%20All,%20(above)</data>
+    </Component>
+    <Component width="61" height="20" x="47" y="534" enabled="true" visible="true" hidden="false" id="fbc53672" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Oct 13" style="left" direction="left"/>
+    <Component width="61" height="20" x="161" y="534" enabled="true" visible="true" hidden="false" id="fbc90396" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Nov 13" style="normal" direction="normal"/>
+    <Component width="61" height="20" x="280" y="534" enabled="true" visible="true" hidden="false" id="fbcKI32V" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Dec 13" style="right" direction="right">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbcP3ebX" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbcFA6c5" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Page width="960" height="1000" enabled="true" visible="true" hidden="false" id="#pg_FJFF6" clasz="com.flairbuilder.project::Page" name="Mileage-View Nov" color="255" backgroundColor="16777215">
+    <Component width="371" height="740" x="7" y="2" enabled="true" visible="true" hidden="false" id="fbc123v3" clasz="com.flairbuilder.components.iphone::IPhoneShell" style="verticalIPhone" direction="vertical"/>
+    <Component width="319" height="28" x="33" y="582" enabled="true" visible="true" hidden="false" id="fbcc679E" clasz="com.flairbuilder.components.iphone::IPhoneButtonBar" bold="false" italic="false" underline="false" color="0" fontSize="10" backgroundColor="16777215" label="" version="3.0">
+      <behaviors>
+        <condition item="Home">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_e2bnx" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="View">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Add">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_42n9u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+        <condition item="Export">
+          <behavior action="flair:GoToPageAction" trigger="flair:itemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_24572" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data>Home,View,Add, Export</data>
+    </Component>
+    <Component width="320" height="44" x="32" y="131" enabled="true" visible="true" hidden="false" id="fbcCD9c5" clasz="com.flairbuilder.components.iphone::IPhoneBar" bold="false" italic="false" underline="false" color="16777215" fontSize="24" backgroundColor="8230065" borderColor="3355443" borderThickness="1" borderStyle="solid" label="Expense Plus"/>
+    <Component width="297" height="24" x="47" y="183" enabled="true" visible="true" hidden="false" id="fbcpHMrH" clasz="com.flairbuilder.components::Search" bold="false" italic="false" underline="false" color="0" fontSize="12" backgroundColor="16777215" borderColor="0" borderThickness="1" borderStyle="solid" cornerRadius="10" label="Search Mileage"/>
+    <Component width="297" height="308" x="47" y="217" enabled="true" visible="true" hidden="false" id="fbc1knE5" clasz="com.flairbuilder.components.iphone::IPhoneTableList" backgroundColor="16777215" borderColor="8947848" borderThickness="2" borderStyle="solid" cornerRadius="20">
+      <behaviors>
+        <condition item="$ANY$">
+          <behavior action="flair:GoToPageAction" trigger="flair:listItemClick">
+            <action id="flair:GoToPageAction" pageID="#pg_99T2k" gotoOption="specificPage" variableName="null" variableValue="null"/>
+          </behavior>
+        </condition>
+      </behaviors>
+      <data encoded="true">-%20Glasgow%20Center%20to%20West%20End-12,%20%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0D-%20Glasgow%20Center%20to%20West%20End-12,%5Cn(Multiline),%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0D-%20Glasgow%20Center%20to%20West%20End-12,%5Cn(Multiline),%3E%0D-%20West%20End%20to%20Glasgow%20Center-12,%5Cn(Multiline),%3E%0Dv%20Delete%20All,%20(above)</data>
+    </Component>
+    <Component width="61" height="20" x="280" y="534" enabled="true" visible="true" hidden="false" id="fbcKxXV3" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Dec 13" style="right" direction="right">
+      <behaviors>
+        <behavior action="flair:GoToPageAction" trigger="flair:mouseClick">
+          <action id="flair:GoToPageAction" pageID="#pg_2M18u" gotoOption="specificPage" variableName="null" variableValue="null"/>
+        </behavior>
+      </behaviors>
+    </Component>
+    <Component width="61" height="20" x="47" y="534" enabled="true" visible="true" hidden="false" id="fbcv4F8r" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="false" italic="false" underline="false" color="16777215" fontSize="10" backgroundColor="5340334" label="Oct 13" style="left" direction="left"/>
+    <Component width="61" height="20" x="161" y="534" enabled="true" visible="true" hidden="false" id="fbc427D9" clasz="com.flairbuilder.components.iphone::IPhonePointyButton" bold="true" italic="false" underline="false" color="16777215" fontSize="12" backgroundColor="5340334" label="Nov 13" style="normal" direction="normal"/>
+    <Component width="24" height="24" x="311" y="143" enabled="true" visible="true" hidden="false" id="fbc952DO" clasz="com.flairbuilder.components::Icon" backgroundColor="799805" iconName="flair:User" size="S"/>
+    <Component width="24" height="24" x="39" y="145" enabled="true" visible="true" hidden="false" id="fbcSAd68" clasz="com.flairbuilder.components::Icon" backgroundColor="15987699" iconName="flair:List" size="S"/>
+    <CustomImages/>
+    <Annotations/>
+    <Layers/>
+  </Page>
+  <Variables/>
+  <CustomComponents embedded="false" list=""/>
+  <Structure name="EXP+" siteMap="1" id="NSy4IxSza4">
+    <Page name="Home" id="#pg_e2bnx" siteMap="1"/>
+    <Page name="Expenses-View-dec" id="#pg_24572" siteMap="1"/>
+    <Page name="Expenses-View-nov" id="#pg_s7k62" siteMap="1"/>
+    <Page name="Mileage-View Dec" id="#pg_2M18u" siteMap="1"/>
+    <Page name="Mileage-View Nov" id="#pg_FJFF6" siteMap="1"/>
+    <Page name="Expenses-Add" id="#pg_99T2k" siteMap="1"/>
+    <Page name="Mileage-Add" id="#pg_42n9u" siteMap="1"/>
+    <Page name="Report-Export" id="#pg_Yv29P" siteMap="1"/>
+  </Structure>
+</Project>
